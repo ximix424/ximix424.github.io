@@ -36,19 +36,38 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=3290279874');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=1427146918');
       });
     }
   </script>
+
   <script src="main.dart.js" type="application/javascript"></script>
+
   <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="/__/firebase/8.3.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
 
-  <script src="/__/firebase/8.3.2/firebase-analytics.js"></script>
-  <script src="/__/firebase/8.3.2/firebase-auth.js"></script>
-  <script src="/__/firebase/8.3.2/firebase-database.js"></script>
+  <!-- SDKs for used Firebase libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
 
-  <!-- Initialize Firebase -->
-  <script src="/__/firebase/init.js"></script>
+
+  <script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyChD4Wr1DXgvU37VY3CBm4VpKHZ0ZZgJ8Y",
+    authDomain: "faschingsplaner-d1d99.firebaseapp.com",
+    databaseURL: "https://faschingsplaner-d1d99-default-rtdb.firebaseio.com",
+    projectId: "faschingsplaner-d1d99",
+    storageBucket: "faschingsplaner-d1d99.appspot.com",
+    messagingSenderId: "171264862906",
+    appId: "1:171264862906:web:367b13bdcdf9a44bfff083",
+    measurementId: "G-6CN11Q4PE7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  </script>
 </body>
 </html>
